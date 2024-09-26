@@ -1,0 +1,19 @@
+.social {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #fff;
+
+}
+.social a {
+  color: #fff;
+  transition: 0.7s;
+  padding: 0.5rem;
+}
+
+.social a:hover {
+  color: #11ABB0;
+  transition: 0.8s;
+}

@@ -1,0 +1,29 @@
+.skillSection {
+  border-radius: 25px;
+  box-shadow: 10px 10px 8px #e0e0e0;
+}
+
+.skillSection h3 {
+  color: #ffffff !important;
+  font-weight: bold;
+  padding-top: 25px;
+}
+
+.skillSection li {
+  padding-left: 35px;
+}
+
+.iconSizing {
+  font-size: 25px;
+  color: #f23d5e;
+}
+
+.skillIcons {
+  background: #ffffff !important;
+}
+
+.skillsName span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffffff;
+}

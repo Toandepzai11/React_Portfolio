@@ -1,0 +1,93 @@
+body {
+  min-height: 100vh;
+  /* background: linear-gradient(45deg, #ff4500, #ff6347, #ff69b4, #800080); */
+  /* background: linear-gradient(45deg, #444, #3C3C3C, #2E2E2E, #5A5A5A); */
+  background-color: #000;
+  /* color: #ffffff; */
+  color: #ffffff;
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}
+/* make the movement for the backgrounbd color */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* the header cofing */
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: transparent;
+  /* border-bottom: 2px solid #444; */
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+/* The logo text */
+.logo {
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+/* the element in navbar (not inclue logo) */
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 40px;
+  
+}
+.navbar .isActive {
+  position: relative;
+  text-decoration: none;
+  color: chocolate;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 40px;
+  
+}
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+/* for character that is isActicve */
+.navbar a.isActive::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: chocolate;
+  transition: 0.3s;
+}
+.navbar a:hover::before {
+  width: 100%;
+}
