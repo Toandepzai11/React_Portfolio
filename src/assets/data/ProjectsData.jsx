@@ -4,9 +4,9 @@ export default [
         title: "React Portfolio",
         difficulty: 2,
         status: "Finished",
-        date: "December 31st, 2022",
+        date: "October 1st, 2024",
         introduction: "As I started to learn and React and want to have a website that displays my portfolio, hence, this project is being born.",
-        url: "",
+        url: "https://github.com/Toandepzai11/React_Portfolio",
         techStack: {
             frontEnd: {
                 title: "Front-End",
